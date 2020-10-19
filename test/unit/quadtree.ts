@@ -4,8 +4,16 @@
  *
  * Testing the quadtree class.
  */
-// import assert from 'assert';
-import QuadTree from "../../src/quadtree";
+import assert from 'assert';
+import QuadTree, { isAxisAligned } from "../../src/quadtree";
+
+describe("QuadTree geometry utils", () => {
+  describe("QuadTree#isAxisAligned", () => {
+    it("should return true for aligned rectangles", () => {
+      assert.strictEqual(isAxisAligned())
+    });
+  });
+});
 
 describe("QuadTree", function () {
   const nodes = [
